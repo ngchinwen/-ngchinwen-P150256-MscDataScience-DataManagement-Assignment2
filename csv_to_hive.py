@@ -1,4 +1,6 @@
 from pyspark.sql import SparkSession
+from pyspark.sql.types import IntegerType
+from pyspark.sql.functions import col
 
 spark = SparkSession.builder \
     .appName("CSV to Hive") \
